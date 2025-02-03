@@ -1,8 +1,14 @@
-import logoImg from '../../assets/logo.svg';
-
+import logoImg from "../../assets/logo.svg";
+import { useState } from "react";
+import { ModalFormType } from "./types.ts";
+import Modal from "./components/Modal.tsx";
 
 const Home = () => {
+  const [modal, setModal] = useState<boolean>(false);
 
+  const onSubmitAdd = (data: ModalFormType) => {
+    alert(data.firstName + ", скоро мы вам ответим :)");
+  };
 
   return (
     <div className="home">
@@ -14,7 +20,10 @@ const Home = () => {
           <p className="lead mb-4">
             5.2 по шкале Вайсмана — новый стандарт передачи данных
           </p>
-          <button className="btn btn-outline-primary">
+          <button
+            className="btn btn-outline-primary"
+            onClick={() => setModal(true)}
+          >
             Попробовать бета-версию
           </button>
         </div>
@@ -26,6 +35,11 @@ const Home = () => {
           />
         </div>
       </div>
+      <Modal
+        show={modal}
+        onSubmitAdd={onSubmitAdd}
+        onHide={() => setModal(false)}
+      />
     </div>
   );
 };

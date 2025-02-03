@@ -7,11 +7,11 @@ const App = () => {
   return (
     <>
       <header>
-        <ToolBar/>
+        <ToolBar />
       </header>
-      <main className='container'>
+      <main className="container">
         <Routes>
-          <Route path="/" element={(<Home/>)}/>
+          <Route path="/" element={<Home />} />
         </Routes>
       </main>
     </>
