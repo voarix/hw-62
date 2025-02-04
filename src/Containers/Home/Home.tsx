@@ -35,6 +35,33 @@ const Home = () => {
           />
         </div>
       </div>
+
+      <div className="py-5">
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-md-6">
+              <h2 className="mb-4">Технические характеристики</h2>
+              <ul className="list-unstyled fs-3">
+                <li className="mb-5 mt-5">
+                  <strong>Алгоритм сжатия:</strong> Middle-Out (из центра наружу)
+                </li>
+                <li className="mb-5">
+                  <strong>Совместимость:</strong> Windows, macOS, Linux, IOS, Android
+                </li>
+              </ul>
+            </div>
+            <div className="col-md-6">
+              <div className="ratio ratio-16x9 rounded-3 overflow-hidden">
+                <iframe
+                  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                  title="Видое ютуб"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <Modal
         show={modal}
         onSubmitAdd={onSubmitAdd}
