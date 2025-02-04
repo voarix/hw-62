@@ -7,6 +7,7 @@ import AboutUs from "./Containers/AboutUs/AboutUs.tsx";
 import Contacts from "./Containers/Contacts/Contacts.tsx";
 import Portfolio from "./Containers/Portfolio/Portfolio.tsx";
 import Countries from "./Containers/Countries/Countries.tsx";
+import Chat from "./Containers/Chat/Chat.tsx";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
           <Route path="/contacts" element={<Contacts />} />
           <Route path="/portfolio" element={<Portfolio />}>
             <Route path="countries" element={<Countries />} />
+            <Route path="chat" element={<Chat />} />
           </Route>
           <Route path="*" element={<h1>Not page found</h1>} />
         </Routes>

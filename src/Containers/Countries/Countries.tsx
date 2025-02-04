@@ -43,7 +43,7 @@ const Countries = () => {
   }, []);
 
   return (
-    <div className="container">
+    <>
       {loader ? <Loader /> : null}
       <div className="vh-100 p-3 row">
         <SideBar countries={countries} onCountryDetails={onCountryDetails} />
@@ -51,7 +51,7 @@ const Countries = () => {
           <CountryDetails country={selectedCountry} countries={countries} />
         ) : null}
       </div>
-    </div>
+    </>
   );
 };
 
