@@ -15,7 +15,7 @@ const initialForm = {
 };
 
 const Modal: React.FC<Props> = ({ onHide, onSubmitAdd, show }) => {
-  const [form, setForm] = useState(initialForm);
+  const [form, setForm] = useState<ModalFormType>(initialForm);
 
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();

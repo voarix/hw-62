@@ -43,10 +43,12 @@ const Home = () => {
               <h2 className="mb-4">Технические характеристики</h2>
               <ul className="list-unstyled fs-3">
                 <li className="mb-5 mt-5">
-                  <strong>Алгоритм сжатия:</strong> Middle-Out (из центра наружу)
+                  <strong>Алгоритм сжатия:</strong> Middle-Out (из центра
+                  наружу)
                 </li>
                 <li className="mb-5">
-                  <strong>Совместимость:</strong> Windows, macOS, Linux, IOS, Android
+                  <strong>Совместимость:</strong> Windows, macOS, Linux, IOS,
+                  Android
                 </li>
               </ul>
             </div>
