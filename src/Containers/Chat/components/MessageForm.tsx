@@ -38,24 +38,24 @@ const MessageForm: React.FC<Props> = ({ onSubmitAddToMessages }) => {
         <div className="input-group mb-3">
           <input
             type="text"
-            value={form.message}
-            onChange={onChangeInputMessage}
-            name="message"
-            className="form-control"
-            placeholder="Your message"
-            aria-label="Your message"
-          />
-        </div>
-
-        <div className="input-group mb-3">
-          <input
-            type="text"
             value={form.author}
             onChange={onChangeInputMessage}
             name="author"
             className="form-control"
             placeholder="Your name"
             aria-label="Your name"
+          />
+        </div>
+
+        <div className="input-group mb-3">
+          <input
+            type="text"
+            value={form.message}
+            onChange={onChangeInputMessage}
+            name="message"
+            className="form-control"
+            placeholder="Your message"
+            aria-label="Your message"
           />
           <button className="btn btn-outline-secondary" type="submit">
             Send
