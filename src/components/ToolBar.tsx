@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 const ToolBar = () => {
   return (
-    <nav className="navbar navbar-expand navbar-dark bg-primary">
+    <nav className="navbar navbar-expand navbar-dark bg-primary fixed-top shadow">
       <div className="container">
         <NavLink
           to="/"
