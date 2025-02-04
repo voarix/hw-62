@@ -10,14 +10,14 @@ const Contacts = () => {
   };
 
   return (
-      <div className="contacts py-5">
-          <div className="row">
-            <ContactsTitle/>
-            <ContactsInfo/>
-            <ContactsForm onSubmitAdd={onSubmitAdd}/>
-            <ContactsGeo/>
-          </div>
+    <div className="contacts py-5">
+      <div className="row">
+        <ContactsTitle />
+        <ContactsInfo />
+        <ContactsForm onSubmitAdd={onSubmitAdd} />
+        <ContactsGeo />
       </div>
+    </div>
   );
 };
 

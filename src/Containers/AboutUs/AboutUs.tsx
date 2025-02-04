@@ -5,8 +5,8 @@ import AboutUsInfo from "./components/AboutUsInfo.tsx";
 const AboutUs = () => {
   return (
     <div className="about-us mt-5">
-      <AboutUsInfo/>
-      <AboutUsTeamCards/>
+      <AboutUsInfo />
+      <AboutUsTeamCards />
     </div>
   );
 };
