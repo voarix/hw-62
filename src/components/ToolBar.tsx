@@ -30,6 +30,11 @@ const ToolBar = () => {
                 Contacts
               </NavLink>
             </li>
+            <li className="nav-item">
+              <NavLink to="/portfolio" className="nav-link">
+                Portfolio
+              </NavLink>
+            </li>
           </ul>
         </div>
       </div>
