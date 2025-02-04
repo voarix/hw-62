@@ -54,7 +54,7 @@ const Home = () => {
               <div className="ratio ratio-16x9 rounded-3 overflow-hidden">
                 <iframe
                   src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-                  title="Видое ютуб"
+                  title="Показ технологии сжатия"
                 ></iframe>
               </div>
             </div>
